@@ -1,9 +1,9 @@
 //import { heroes } from './data/heroes'
 //import { heroes} from './data/heroes'
 
-import heroes, {owners} from './data/heroes';
+import { heroes } from "./data/heroes";
 
-console.log(owners);
+
 const getHeroById = (id) => heroes.find((idHeroes)=> idHeroes.id==id);
 
 
@@ -14,4 +14,3 @@ console.log(getHeroById(2));
 const getHeroByOwner = (owner) => heroes.filter((ownerHeroes) => ownerHeroes.owner.toLowerCase().indexOf(owner.toLowerCase()) > -1);
 
 console.table(getHeroByOwner('Marvel'));
-
