@@ -7,6 +7,6 @@ const activo = true;
   respuesta = 'Inactivo';
 }
  */
-const mensaje = !activo && 'Activo';
+const mensaje = !activo && "Activo";
 
 console.log(mensaje);
