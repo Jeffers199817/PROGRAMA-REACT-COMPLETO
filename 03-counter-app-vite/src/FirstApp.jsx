@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export const FirstApp = ({ title }
+export const FirstApp = ({title, edad }
 ) => {
 
  // console.log(props);
@@ -25,7 +25,8 @@ export const FirstApp = ({ title }
   return (
     <>
       <h1>{estudiante.nombre} {estudiante.apellido}</h1>
-      <h1>{title }</h1>
+      <h1>{title}</h1>
+      <p>{edad + 1} años de edad</p>
       <code>{JSON.stringify(estudiante, null, 2)}</code>
       <div>
         <p>
