@@ -1,6 +1,10 @@
 import { useState } from "react";
 
-export const FirstApp = () => {
+export const FirstApp = ({ title }
+) => {
+
+ // console.log(props);
+
   const estudiante = {
     nombre: "Jefferson",
     apellido: "Alquinga",
@@ -20,7 +24,8 @@ export const FirstApp = () => {
 
   return (
     <>
-          <h1>{estudiante.nombre} {estudiante.apellido}</h1>
+      <h1>{estudiante.nombre} {estudiante.apellido}</h1>
+      <h1>{title }</h1>
       <code>{JSON.stringify(estudiante, null, 2)}</code>
       <div>
         <p>
