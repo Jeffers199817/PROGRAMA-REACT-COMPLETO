@@ -2,7 +2,7 @@ import { useState } from "react";
 
 export const FirstApp = () => {
   const estudiante = {
-    nombre: "jefferson",
+    nombre: "Jefferson",
     apellido: "Alquinga",
     edad: 27,
     direccion: "Puembo-chiche",
@@ -20,7 +20,7 @@ export const FirstApp = () => {
 
   return (
     <>
-      <h1>{estudiante.nombre}</h1>
+          <h1>{estudiante.nombre} {estudiante.apellido}</h1>
       <code>{JSON.stringify(estudiante, null, 2)}</code>
       <div>
         <p>
