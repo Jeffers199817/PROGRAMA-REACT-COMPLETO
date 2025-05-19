@@ -1,10 +1,7 @@
 import { useState } from "react";
+import PropTypes from "prop-types";
 
-export const FirstApp = ({title, edad }
-) => {
-
- // console.log(props);
-
+export const FirstApp = ({ title, subTitle }) => {
   const estudiante = {
     nombre: "Jefferson",
     apellido: "Alquinga",
@@ -24,9 +21,12 @@ export const FirstApp = ({title, edad }
 
   return (
     <>
-      <h1>{estudiante.nombre} {estudiante.apellido}</h1>
-      <h1>{title}</h1>
-      <p>{edad + 1} años de edad</p>
+      <h1>
+        {estudiante.nombre} {estudiante.apellido}
+      </h1>
+      <h1>
+        {title} esto es un {subTitle}
+      </h1>
       <code>{JSON.stringify(estudiante, null, 2)}</code>
       <div>
         <p>
@@ -39,4 +39,14 @@ export const FirstApp = ({title, edad }
       <p>Estudiante de Ingeniería</p>
     </>
   );
+};
+
+FirstApp.propTypes = {
+  title: PropTypes.string.isRequired,
+  subTitle: PropTypes.string.isRequired,
+};
+
+FirstApp.defaultProps = {
+  title: "No hay título1",
+  subTitle: "No hay subtítulo2"
 };

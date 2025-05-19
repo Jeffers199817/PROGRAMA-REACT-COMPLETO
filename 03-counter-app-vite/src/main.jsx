@@ -1,12 +1,10 @@
 import React from "react";
-import ReactDOM from 'react-dom/client';
-import { HelloWord} from '../src/HelloWord';
+import ReactDOM from "react-dom/client";
 import { FirstApp } from "./FirstApp";
-import './styles.css';
+import "./styles.css";
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-    <React.StrictMode>
-       
-        <FirstApp title="Hola bienvenido Jefferson" edad={26} />
-    </React.StrictMode>
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <React.StrictMode>
+        <FirstApp /> {/* Omite title y subTitle para probar defaultProps */}
+  </React.StrictMode>
 );
