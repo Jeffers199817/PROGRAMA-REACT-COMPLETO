@@ -1,5 +1,5 @@
 
-const usContext = ({ clave, nombre, edad, rango = 'Capitán' }) => {
+export const usContext = ( clave, edad, rango = 'Capitán' ) => {
 
 
     // console.log( nombre, edad, rango );
