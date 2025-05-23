@@ -1,7 +1,7 @@
 import { useState } from "react";
 import PropTypes from "prop-types";
 
-export const FirstApp = ({ title, subTitle }) => {
+const FirstApp = ({ title, subTitle }) => {
   const estudiante = {
     nombre: "Jefferson",
     apellido: "Alquinga",
