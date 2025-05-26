@@ -6,6 +6,8 @@ import "./styles.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
     <React.StrictMode>
-        <FirstApp title="Hola, soy Vegeta"/> {/* Omite title y subTitle para probar defaultProps */}
+  {/*  <FirstApp title="Hola, soy Vegeta" />
+    {/* Omite title y subTitle para probar defaultProps */}
+    <CounterApp value={100}/>
   </React.StrictMode>
 );

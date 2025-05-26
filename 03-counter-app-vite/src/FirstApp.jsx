@@ -4,11 +4,9 @@ export const FirstApp = ({title = "Hola, soy Vegeta" , subtitulo="No hay subtitu
   return (
     <>
       <h1 data-testid ='test-title'>{title} </h1>
-      <h1>{subtitulo}</h1>
-      <h1>{subtitulo}</h1>
-      <h1>{subtitulo}</h1>
-      <h1>{subtitulo}</h1>
-      <h1>{name}</h1>
+      <h2>{subtitulo}</h2>
+    
+      <h3>{name}</h3>
       
     </>
   );
