@@ -6,7 +6,6 @@ exports[`Pruebas en <CounterApp.jsx></CounterApp.jsx> debe de hacer match con el
     CounterAPP
   </h1>
   <h2>
-    El valor es:
     100
   </h2>
   <button>
