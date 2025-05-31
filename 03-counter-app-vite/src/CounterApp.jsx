@@ -19,7 +19,7 @@ export const CounterApp = ({ value = 4 }) => {
     }
         
         //RESET
-        const handleReset = () => { setCounter((c) => (c * 0)) }
+        const handleReset = () => { setCounter(( c) => (c * 0)) }
 
 
     
